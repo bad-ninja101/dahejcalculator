@@ -30,15 +30,15 @@ const GenderSelectionPage = ({ onNavigate }) => {
 
   if (showOtherScreen) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-yellow-300 via-pink-300 to-purple-400 flex flex-col items-center justify-center p-4 md:p-8">
         <div className="text-center">
-          <div className="text-9xl md:text-[10rem] leading-none mb-8">🙏🙏</div>
-          <p className="text-white text-xl md:text-2xl mb-6">Aap mumbai nhi aa skte.</p>
+          <div className="text-9xl md:text-[10rem] leading-none mb-8">🙏😔🙏</div>
+          <p className="text-white text-2xl md:text-3xl mb-8 font-semibold tracking-wide drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]">Aap mumbai nhi aa skte💔</p>
 
           <div className="flex items-center justify-center gap-4">
             <button
               onClick={() => setShowOtherScreen(false)}
-              className="px-6 py-3 rounded-2xl bg-white text-slate-900 font-semibold shadow-lg hover:scale-105 transition-transform"
+              className="px-6 py-3 rounded-2xl font-bold text-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 hover:scale-105 shadow-lg transition-all duration-300"
             >
               Go back
             </button>
@@ -63,7 +63,7 @@ const GenderSelectionPage = ({ onNavigate }) => {
     },
     {
       id: 'other',
-      label: 'Third Gender',
+      label: 'Others',
       image: '/images/third.jpg',
       gradient: 'from-purple-500/20 to-indigo-500/20'
     }
