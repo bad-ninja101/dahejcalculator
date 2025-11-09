@@ -21,7 +21,7 @@ const WelcomePage = ({ onContinue }) => {
           Welcome to
         </h1>
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-black bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300 bg-clip-text text-transparent mb-8 drop-shadow-2xl animate-gradient">
-          Dahej Calculator
+          💰 Dahej Calculator 💰
         </h2>
 
         {/* Subtitle */}
